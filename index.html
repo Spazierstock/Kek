@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrian Bache ist ein Kek</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://img.pr0gramm.com/2020/04/22/e039951eee9fb863.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007BFF;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    @keyframes fun-animation {
+      0%, 100% { transform: scale(1) rotate(0deg); }
+      10%, 30%, 50%, 70%, 90% { transform: scale(1.2) rotate(10deg); }
+      20%, 40%, 60%, 80% { transform: scale(1.2) rotate(-10deg); }
+    }
+
+    .animated-text {
+      font-size: 2rem;
+      text-align: center;
+      animation: fun-animation 1s ease infinite;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="animated-text">Adrian Bache ist ein Kek und isst gerne Katzenfutter!</div>
+    <a href="https://www.mariowiki.com/Mario_Kart_8_Deluxe#Drivers.27_statistics" target="_blank">Noobs klicken hier</a>
+  </div>
+  <audio id="meow" src="https://static.wikia.nocookie.net/minecraft_de_gamepedia/images/e/e7/Stal.ogg/revision/latest?cb=20120324114455" preload="auto"></audio>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const meow = document.getElementById('meow');
+      document.body.addEventListener('click', function() {
+        meow.play();
+      });
+    });
+  </script>
+</body>
+</html>
